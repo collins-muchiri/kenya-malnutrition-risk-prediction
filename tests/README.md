@@ -6,14 +6,14 @@ This directory contains unit and integration tests for the KAM Forecast system.
 
 The test suite is organized by module:
 
-- `test_data_loading.py` - Tests for data loading functionality
-- `test_data_cleaning.py` - Tests for data cleaning functionality  
-- `test_feature_engineering.py` - Tests for feature engineering
-- `test_model_training.py` - Tests for model training
-- `test_configuration.py` - Tests for configuration management
-- `test_utils.py` - Tests for utility functions
-- `test_validation.py` - Tests for data validation
-- `test_runner.py` - Test discovery and execution script
+- `test_data_loading.py`: Tests for data loading functionality
+- `test_data_cleaning.py`: Tests for data cleaning functionality  
+- `test_feature_engineering.py`: Tests for feature engineering
+- `test_model_training.py`: Tests for model training
+- `test_configuration.py`: Tests for configuration management
+- `test_utils.py`: Tests for utility functions
+- `test_validation.py`: Tests for data validation
+- `test_runner.py`: Test discovery and execution script
 
 ## Running Tests
 
@@ -70,8 +70,8 @@ When adding new functionality to the system, please add corresponding tests:
 
 If tests fail, check the debug directory for diagnostic scripts:
 
-- `debug/debug_system.py` - General system diagnostics
-- `debug/debug_data_quality.py` - Data-specific diagnostics
+- `debug/debug_system.py`: General system diagnostics
+- `debug/debug_data_quality.py`: Data-specific diagnostics
 
 ## Continuous Integration
 

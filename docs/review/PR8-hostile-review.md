@@ -12,7 +12,7 @@ Scope: `git diff origin/main...fix/zero-red-python-gates` at the time of review
    quotes (SILENT_FAILURES.md, DECISIONS.md), the suppression auditor's own regex
    literals, or sweep evidence. **Zero operative suppressions added.**
    One pre-existing `|| true` exists in `web/package.json` "prepare" (husky install
-   guard for environments without devDependencies) - web scope, dispositioned in
+   guard for environments without devDependencies): web scope, dispositioned in
    the web PR review, not introduced here.
 
 2. **Assertion integrity**: per-file assertion census main vs branch:

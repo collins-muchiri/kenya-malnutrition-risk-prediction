@@ -16,10 +16,10 @@ Reviewer: same operator, hostile-reviewer mode (rule 11.2). Date: 2026-10-25.
 3. **Major upgrade justified**: next 15.5.25 -> 16.4.3 is the audit-declared fix
    for the critical next advisory AND the high postcss advisory (no 15.x fix
    exists). Changelog-level breakage encountered and fixed: Turbopack enforces
-   the CSS @import ordering spec (globals.css fixed - the old order was invalid
+   the CSS @import ordering spec (globals.css fixed: the old order was invalid
    CSS), `next lint` removed upstream (eslint wired directly with flat config),
    lint-staged referenced the removed command (fixed; husky hook itself caught
-   this by blocking the commit - evidence the hook works).
+   this by blocking the commit: evidence the hook works).
 4. **Verification width**: npm audit --omit=dev = 0 vulnerabilities; tsc --noEmit
    clean; eslint 0 errors; production build exit 0 (all logged in
    docs/qa/artifacts/ZR-005.*.green.log); Vercel preview deployment for the PR

@@ -1,4 +1,4 @@
-# Audit Report — Kenya Childhood Malnutrition Risk Prediction System
+# Audit Report: Kenya Childhood Malnutrition Risk Prediction System
 
 **Repository:** `collins-muchiri/Kenya-Childhood-Malnutrition-Risk-Prediction-System`
 **Audit date:** 2026-09-13
@@ -12,16 +12,16 @@
 The repository contained a competent Python ML pipeline (data loading →
 cleaning → feature engineering → Random Forest training → prediction →
 WHO DQR validation → Streamlit dashboards) but **was not deployable as a
-live web page** — Streamlit apps require a long-running Python server,
+live web page**: Streamlit apps require a long-running Python server,
 which Vercel's serverless platform does not host natively.
 
 To deliver the user's requirement ("the system live and functioning with
 a viewable web page"), I built a brand-new **Next.js 15 dashboard** under
 `web/` that consumes the pipeline's predictions output. The dashboard is
 Vercel-ready, fully responsive, and ships with a **Neon Postgres data
-layer** (optional — falls back to bundled static JSON).
+layer** (optional: falls back to bundled static JSON).
 
-**Audit verdict: PASS** — the system is now operational, tested, and
+**Audit verdict: PASS**: the system is now operational, tested, and
 deployable. All 21 Python tests + the Next.js production build pass.
 
 ---
@@ -34,11 +34,11 @@ deployable. All 21 Python tests + the Next.js production build pass.
 |---|---|
 | Structure | Clean separation: `src/data`, `src/features`, `src/models`, `src/validation`, `src/scoring`, `src/reporting`. ✅ |
 | Config | Centralised in `config/config.py` as a dataclass. ✅ |
-| Type hints | Partial — most modules untyped. ⚠ |
+| Type hints | Partial: most modules untyped. ⚠ |
 | Tests | 21 pytest tests pass; cover data loading, cleaning, feature engineering, model training, validation, config. ✅ |
-| Test warnings | 11 `FutureWarning` from `pd.date_range(..., freq='M')` — deprecated, should be `'ME'`. ⚠ |
+| Test warnings | 11 `FutureWarning` from `pd.date_range(..., freq='M')`: deprecated, should be `'ME'`. ⚠ |
 | Model artefacts | 12 `.pkl` files in `models/` (11 are timestamped duplicates). ⚠ Cleanup recommended. |
-| `__pycache__` committed | Yes — should be gitignored. ⚠ (fixed in this PR) |
+| `__pycache__` committed | Yes: should be gitignored. ⚠ (fixed in this PR) |
 | Duplicate data dirs | `data/raw/` AND `src/data/raw/` both exist with overlapping CSVs. ⚠ |
 
 ### 1.2 New Next.js dashboard
@@ -65,10 +65,10 @@ deployable. All 21 Python tests + the Next.js production build pass.
 | `LICENSE` | ✅ MIT. |
 | `QUICK_START.md` / `RUNNING_LOCALLY.md` / `SYSTEM_WORKFLOW.md` | ✅ Already present (Python pipeline). |
 | `IMPLEMENTATION_SUMMARY.md` / `PROJECT_REVIEW.md` | ✅ Already present. |
-| `web/scripts/seed_neon.sql` | ✅ **New** — Neon schema + seed SQL. |
-| `PRESENTATION.html` | ✅ **New** — 7-slide deck. |
+| `web/scripts/seed_neon.sql` | ✅ **New**: Neon schema + seed SQL. |
+| `PRESENTATION.html` | ✅ **New**: 7-slide deck. |
 
-**Gap closed:** the previous README referenced `your-org/your-repo` placeholders — fixed to the real repo URL.
+**Gap closed:** the previous README referenced `your-org/your-repo` placeholders: fixed to the real repo URL.
 
 ---
 
@@ -79,7 +79,7 @@ deployable. All 21 Python tests + the Next.js production build pass.
 21 passed, 11 warnings in 3.29s
 ```
 The 11 warnings are all `FutureWarning: 'M' is deprecated and will be removed
-in a future version, please use 'ME' instead.` — non-blocking but should be
+in a future version, please use 'ME' instead.`: non-blocking but should be
 fixed in a follow-up.
 
 ### 3.2 Next.js build (new)
@@ -131,7 +131,7 @@ No known CVEs in the pinned ranges. Dependabot is configured (`.github/workflows
 | tailwindcss | ^3.4.17 |
 | typescript | ^5.7.0 |
 
-All current and stable. No `pg` dependency is forced — it's loaded dynamically
+All current and stable. No `pg` dependency is forced: it's loaded dynamically
 only when `DATABASE_URL` is set, keeping the default bundle small.
 
 ---
@@ -139,13 +139,13 @@ only when `DATABASE_URL` is set, keeping the default bundle small.
 ## 5. Performance
 
 ### Python pipeline
-- Model training: ~2–5 s on the 450-record dataset (acceptable).
+- Model training: ~2-5 s on the 450-record dataset (acceptable).
 - Predictions CSV: 24 KB, loads in <50 ms.
-- Features CSV: 781 KB, 100+ engineered features — loads in <500 ms.
+- Features CSV: 781 KB, 100+ engineered features: loads in <500 ms.
 
 ### Web dashboard
 - First Load JS: 214 kB (Recharts is the heaviest dep, ~80 kB gzipped).
-- All routes statically prerendered (`○ (Static)`) — served from Vercel's edge CDN.
+- All routes statically prerendered (`○ (Static)`): served from Vercel's edge CDN.
 - No client-side data fetching on initial load (data is bundled as JSON) → instant render.
 - Charts are responsive and lazy-resize via `ResponsiveContainer`.
 
@@ -170,13 +170,13 @@ only when `DATABASE_URL` is set, keeping the default bundle small.
 - ✅ Next.js app under `web/` builds cleanly
 - ✅ Deployable to Vercel by importing the GitHub repo
 - ✅ Neon Postgres schema + seed SQL under `web/scripts/seed_neon.sql`
-- ✅ `DATABASE_URL` env var support — set in Vercel to switch from JSON to Postgres
+- ✅ `DATABASE_URL` env var support: set in Vercel to switch from JSON to Postgres
 - ✅ `.gitignore` updated to exclude `__pycache__/`, `web/node_modules/`, `web/.next/`
 
 ### Neon note
 The provided Neon API key belongs to an account with `projects_limit: 0`
 (no free-tier projects available via API). The Neon **schema and seed SQL are
-ready** — to enable the live database, the maintainer needs to create a Neon
+ready**, to enable the live database, the maintainer needs to create a Neon
 project manually in the console and set `DATABASE_URL` in Vercel. The app
 gracefully falls back to bundled static JSON in the meantime, so the live web
 page works without a database.
@@ -188,9 +188,9 @@ page works without a database.
 - ✅ No hardcoded secrets in the codebase.
 - ✅ `DATABASE_URL` read from env, never committed.
 - ✅ No `eval` / `exec` / `pickle.loads` on untrusted input.
-- ✅ All data is synthetic / publicly available — no PII / PHI.
-- ✅ MIT license — no licensing risk for humanitarian reuse.
-- ⚠ 12 `.pkl` model files committed — `pickle` is unsafe to load from untrusted
+- ✅ All data is synthetic / publicly available: no PII / PHI.
+- ✅ MIT license: no licensing risk for humanitarian reuse.
+- ⚠ 12 `.pkl` model files committed: `pickle` is unsafe to load from untrusted
   sources. Recommend documenting the provenance and adding a SHA256 checksum file.
 
 ---
@@ -205,7 +205,7 @@ page works without a database.
 | Issues template | ⚠ Not present |
 | PR template | ⚠ Not present |
 | Release tags | ⚠ None yet (v1.0.0 published in this PR) |
-| `__pycache__` committed | ⚠ Yes — added to `.gitignore` and removed in this PR |
+| `__pycache__` committed | ⚠ Yes: added to `.gitignore` and removed in this PR |
 
 ---
 
@@ -221,8 +221,8 @@ page works without a database.
 | 6 | Created 7-slide HTML presentation | `PRESENTATION.html` |
 | 7 | Rewrote README to cover both layers | `README.md` |
 | 8 | Updated `.gitignore` to exclude pycache + node_modules | `.gitignore` |
-| 9 | Verified `next build` passes | — |
-| 10 | Verified all 21 Python tests still pass | — |
+| 9 | Verified `next build` passes | n/a |
+| 10 | Verified all 21 Python tests still pass | n/a |
 | 11 | Published GitHub release v1.0.0 | (via GitHub API) |
 
 ---

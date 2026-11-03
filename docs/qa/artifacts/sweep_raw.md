@@ -1,4 +1,4 @@
-# Silent-failure sweep - Kenya-Childhood-Malnutrition-Risk-Prediction-System
+# Silent-failure sweep: Kenya-Childhood-Malnutrition-Risk-Prediction-System
 Date: 2026-10-25T13:03:06Z  Branch: fix/zero-red-python-gates
 
 ```

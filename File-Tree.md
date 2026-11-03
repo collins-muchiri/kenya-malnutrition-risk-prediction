@@ -1,4 +1,4 @@
-# Kenya Childhood Malnutrition Risk Prediction System - File Tree
+# Kenya Childhood Malnutrition Risk Prediction System: File Tree
 
 ## Complete Project Structure
 
@@ -91,7 +91,7 @@
 - **RUNNING_LOCALLY.md**: Detailed instructions for running the system locally
 - **SYSTEM_WORKFLOW.md**: Complete system workflow and usage instructions
 - **requirements.txt**: Python dependencies
-- **File-Tree.md**: This file - complete project structure documentation
+- **File-Tree.md**: This file: complete project structure documentation
 
 ### Application Directory (`app/`)
 Contains Streamlit dashboard applications:
@@ -190,9 +190,9 @@ Python virtual environment
 - **Parameters**: Model params, thresholds, weights all configurable
 
 ### Dashboards
-- **Main**: `app/app.py` - County-level predictions
-- **Executive**: `app/executive_dashboard.py` - National overview
-- **Quality**: `app/data_quality_app.py` - Data quality review
+- **Main**: `app/app.py`: County-level predictions
+- **Executive**: `app/executive_dashboard.py`: National overview
+- **Quality**: `app/data_quality_app.py`: Data quality review
 
 ### Utilities
 - **Logging**: `src/utils/logging_config.py`
