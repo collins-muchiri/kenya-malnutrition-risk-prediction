@@ -27,7 +27,7 @@ Disclosure: a substantial share of history was produced by AI-assisted tooling u
 
 ## Third-party code
 
-- No vendored third-party source trees detected. Dependencies are declared in `pyproject.toml`/`requirements.txt` (pandas, numpy, scikit-learn, matplotlib, seaborn, streamlit, reportlab, python-pptx, dotenv, openpyxl, xlrd) - all permissive licences. A `licensecheck`/pip licence policy gate is scheduled for P1 CI.
+- No vendored third-party source trees detected. Dependencies are declared in `pyproject.toml`/`requirements.txt` (pandas, numpy, scikit-learn, matplotlib, seaborn, streamlit, reportlab, python-pptx, dotenv, openpyxl, xlrd): all permissive licences. A `licensecheck`/pip licence policy gate is scheduled for P1 CI.
 
 ## Data
 

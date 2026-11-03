@@ -209,7 +209,7 @@ To use the full WHO LMS tables (more accurate), replace the `WFA_REF`, `HFA_REF`
 ## The Alerts System
 
 ### Architecture
-- **Subscription endpoint**: `POST /api/alerts/subscribe` — stores email + county preferences
+- **Subscription endpoint**: `POST /api/alerts/subscribe`: stores email + county preferences
 - **Push notifications**: browser `Notification` API (requires user permission)
 - **Email alerts**: in production, integrate Resend or SendGrid (currently logs to console)
 
@@ -221,10 +221,10 @@ Alerts fire when:
 - Water access drops below 50% (moderate)
 
 ### Customizing thresholds
-Edit `web/components/AlertsClient.tsx` — the `MOCK_ALERTS` array defines current active alerts. In production, these would come from a scheduled job that checks the latest KHIS/DHIS2 data.
+Edit `web/components/AlertsClient.tsx`: the `MOCK_ALERTS` array defines current active alerts. In production, these would come from a scheduled job that checks the latest KHIS/DHIS2 data.
 
 ### Setting up email delivery (production)
-1. Sign up for Resend (https://resend.com) — free tier: 3,000 emails/month
+1. Sign up for Resend (https://resend.com): free tier: 3,000 emails/month
 2. Get your API key
 3. Set `RESEND_API_KEY` in Vercel env vars
 4. Add email-sending logic to `/api/alerts/subscribe/route.ts`:
@@ -346,7 +346,7 @@ npm run build
 ### Map doesn't render
 - Check browser console for errors (F12)
 - Verify `/geo/kenya-counties.geojson` loads: `curl https://kmal.vercel.app/geo/kenya-counties.geojson`
-- Leaflet CSS is loaded dynamically — check network tab for `leaflet.css`
+- Leaflet CSS is loaded dynamically: check network tab for `leaflet.css`
 
 ### Prediction API returns 429
 - Rate limit is 30 requests/minute per IP

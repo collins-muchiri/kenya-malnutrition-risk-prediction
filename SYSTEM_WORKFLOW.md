@@ -1,4 +1,4 @@
-# Kenya Childhood Malnutrition Risk Prediction System - Complete Workflow
+# Kenya Childhood Malnutrition Risk Prediction System: Complete Workflow
 
 ## System Overview
 
@@ -51,9 +51,9 @@ pip install -r requirements.txt
 
 #### 1.2. Prepare Input Data
 Place the following files in `data/raw/` directory:
-- `who_nutrition.csv` - WHO child nutrition indicators
-- `unicef_wash.csv` - UNICEF WASH & nutrition indicators  
-- `dhis2_cases.csv` - DHIS2 malnutrition case data
+- `who_nutrition.csv`: WHO child nutrition indicators
+- `unicef_wash.csv`: UNICEF WASH & nutrition indicators  
+- `dhis2_cases.csv`: DHIS2 malnutrition case data
 
 Each file should contain columns: `county`, `sub_county`, `date`, and indicator-specific columns.
 

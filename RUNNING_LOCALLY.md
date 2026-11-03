@@ -36,9 +36,9 @@ pip install -r requirements.txt
 
 ### 4. Place Raw Data Files
 Place the following CSV files in the `data/raw/` directory:
-- `who_nutrition.csv` - WHO child nutrition indicators
-- `unicef_wash.csv` - UNICEF WASH & nutrition indicators
-- `dhis2_cases.csv` - DHIS2 malnutrition case data
+- `who_nutrition.csv`: WHO child nutrition indicators
+- `unicef_wash.csv`: UNICEF WASH & nutrition indicators
+- `dhis2_cases.csv`: DHIS2 malnutrition case data
 
 **Note**: If you don't have real data, the system will still run but with limited functionality.
 
@@ -173,7 +173,7 @@ If you encounter issues:
 
 ## Security Notes
 
-- All processing happens locally - no data is sent externally
+- All processing happens locally: no data is sent externally
 - Virtual environment isolates dependencies
 - No credentials or sensitive data required
 - Safe for air-gapped environments

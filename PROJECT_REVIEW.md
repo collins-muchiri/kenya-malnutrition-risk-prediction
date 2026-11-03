@@ -213,9 +213,9 @@ test = df[df['date'] >= split_date]
 
 **Recommendations**:
 - Create utility modules for common operations:
-  - `src/utils/file_utils.py` - file operations
-  - `src/utils/model_utils.py` - model save/load
-  - `src/utils/data_utils.py` - common data operations
+  - `src/utils/file_utils.py`: file operations
+  - `src/utils/model_utils.py`: model save/load
+  - `src/utils/data_utils.py`: common data operations
 
 ### 3.3 Separation of Concerns
 **Issues**:

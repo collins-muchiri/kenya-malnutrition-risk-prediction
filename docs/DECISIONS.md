@@ -97,7 +97,7 @@ Stop-and-log register (mission rule 0.11). Each entry: assumption, rationale, re
 
 - Assumption: sandbox has no docker daemon and no macOS runner.
 - Rationale: container/matrix gates are delegated to GitHub Actions as system of record; local absence is disclosed rather than papered over.
-- Reversibility: full - CI will produce the authoritative artefacts.
+- Reversibility: full: CI will produce the authoritative artefacts.
 
 ## D-003 Streamlit `/healthz` accepted as the Phase 0 app-health signal
 
@@ -108,8 +108,8 @@ Stop-and-log register (mission rule 0.11). Each entry: assumption, rationale, re
 ## D-004 Web dashboard not built locally in Phase 0
 
 - Assumption: npm install/build of the Next.js app exceeds Phase 0 budget; deployed instance (kmal.vercel.app, HTTP 200) is live evidence of buildability at some past commit.
-- Rationale: rule 0.12 - cut scope (frontend build), never evidence honesty; the gap is recorded in AUDIT.md D1 row instead of being claimed as verified.
-- Reversibility: full - P1/P4 will add the clean-clone gate that builds web/ in CI.
+- Rationale: rule 0.12: cut scope (frontend build), never evidence honesty; the gap is recorded in AUDIT.md D1 row instead of being claimed as verified.
+- Reversibility: full: P1/P4 will add the clean-clone gate that builds web/ in CI.
 
 ## D-005 Token handling
 

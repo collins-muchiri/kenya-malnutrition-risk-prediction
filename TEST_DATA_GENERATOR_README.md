@@ -18,9 +18,9 @@ python scripts/generate_test_data_simple.py
 ```
 
 By default, this creates:
-- `data/raw/who_nutrition.csv` - WHO nutrition indicators
-- `data/raw/unicef_wash.csv` - UNICEF WASH indicators
-- `data/raw/dhis2_cases.csv` - DHIS2 malnutrition case data
+- `data/raw/who_nutrition.csv`: WHO nutrition indicators
+- `data/raw/unicef_wash.csv`: UNICEF WASH indicators
+- `data/raw/dhis2_cases.csv`: DHIS2 malnutrition case data
 - Additional contextual data files
 
 ### Run Full Pipeline with Test Data

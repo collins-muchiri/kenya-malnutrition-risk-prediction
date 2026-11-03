@@ -1,4 +1,4 @@
-# Quick Start Guide - Updated Codebase
+# Quick Start Guide: Updated Codebase
 
 This guide helps you get started with the improved codebase.
 
@@ -78,7 +78,7 @@ streamlit run app/executive_dashboard.py
 All settings centralized in `config/config.py`
 
 ### 2. Logging
-Automatic logging - no need for print statements
+Automatic logging: no need for print statements
 
 ### 3. Error Handling
 Better error messages and validation

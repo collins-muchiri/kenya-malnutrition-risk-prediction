@@ -1,4 +1,4 @@
-# User Manual — Caregivers
+# User Manual: Caregivers
 
 ## Table of Contents
 1. [Getting Started](#getting-started)
@@ -23,7 +23,7 @@ Open this URL in your browser:
 
 **System requirements:**
 - A smartphone, tablet, or computer with an internet connection
-- A modern browser (Chrome, Firefox, Safari, or Edge — version 2023 or newer)
+- A modern browser (Chrome, Firefox, Safari, or Edge: version 2023 or newer)
 - No login or account required
 
 ---
@@ -40,11 +40,11 @@ The home page shows a full-country map of Kenya with all 47 counties.
 
 ### Switching Data Layers
 Above the map, you'll see 5 buttons representing different data layers:
-1. **🧮 Predicted Cases** — ML-predicted acute malnutrition cases
-2. **📏 Stunting Rate** — % of under-5s who are stunted (chronic)
-3. **⚖️ Wasting Rate** — % of under-5s who are wasted (acute)
-4. **💧 Water Access** — % with improved water sources
-5. **💰 Poverty Rate** — % below the poverty line
+1. **🧮 Predicted Cases**: ML-predicted acute malnutrition cases
+2. **📏 Stunting Rate**: % of under-5s who are stunted (chronic)
+3. **⚖️ Wasting Rate**: % of under-5s who are wasted (acute)
+4. **💧 Water Access**: % with improved water sources
+5. **💰 Poverty Rate**: % below the poverty line
 
 Click any button to switch what the map colours show. The legend at the bottom updates automatically.
 
@@ -54,7 +54,7 @@ Click any button to switch what the map colours show. The legend at the bottom u
 3. The detail view shows:
    - 6 key indicators (predicted cases, stunting, wasting, under-5 population, water access, poverty rate)
    - Sub-county disaggregation (variation within the county)
-   - The "why" behind malnutrition — drivers, a family's story, local initiatives, and success stories
+   - The "why" behind malnutrition: drivers, a family's story, local initiatives, and success stories
 4. Click **"Open full map"** at the top-right for the full exploration page
 
 ### Turning on Live Mode
@@ -67,7 +67,7 @@ Check the **"Labels"** box to show county name + value markers directly on the m
 
 ## Assessing a Child's Risk
 
-The **Assess** page (`/assess`) lets you check a child's malnutrition risk in seconds — no login required.
+The **Assess** page (`/assess`) lets you check a child's malnutrition risk in seconds: no login required.
 
 ### Step-by-step
 
@@ -77,7 +77,7 @@ The **Assess** page (`/assess`) lets you check a child's malnutrition risk in se
    - **Sex**: male or female
    - **Weight (kg)**: measured weight in kilograms
    - **Height (cm)**: measured height or length in centimeters
-   - **MUAC (mm)**: mid-upper arm circumference (optional but highly recommended — if you have a MUAC tape, measure it)
+   - **MUAC (mm)**: mid-upper arm circumference (optional but highly recommended: if you have a MUAC tape, measure it)
    - **Food groups (last 24h)**: count how many of these 7 food groups the child ate: grains, legumes, dairy, eggs, meat/fish, vegetables, fruit (0-7)
    - **Meals per day**: number of meals in the last 24 hours
    - **Illness in last 2 weeks**: check the box if the child had diarrhoea, fever, or respiratory illness
@@ -99,14 +99,14 @@ The result shows:
 - **Findings**: plain-language explanation of each measurement
 - **Recommendations**: actionable next steps based on the risk level
 
-### ⚠️ Important — when to seek immediate help
+### ⚠️ Important: when to seek immediate help
 If the result shows **"Severe Acute Malnutrition (SAM)"** with a red banner:
 - **Seek medical attention immediately** at the nearest health facility
-- The child needs therapeutic feeding (RUTF — Ready-to-Use Therapeutic Food)
-- Do not delay — SAM is life-threatening
+- The child needs therapeutic feeding (RUTF: Ready-to-Use Therapeutic Food)
+- Do not delay: SAM is life-threatening
 
 ### Privacy
-All calculations happen **in your browser** — nothing is sent to a server or stored. Use a pseudonym if you want to track the same child over time; do not enter the child's real name.
+All calculations happen **in your browser**: nothing is sent to a server or stored. Use a pseudonym if you want to track the same child over time; do not enter the child's real name.
 
 ---
 
@@ -124,11 +124,11 @@ The **Alerts** page (`/alerts`) lets you receive notifications when county risk 
 ### Browser push notifications
 1. On the Alerts page, find the **"Browser push notifications"** section
 2. Click **"Enable"**
-3. Your browser will ask for permission — click **"Allow"**
+3. Your browser will ask for permission: click **"Allow"**
 4. You'll receive desktop notifications instantly when alerts fire
 
 ### Dismissing alerts
-Each alert card has an **✕** button in the top-right — click it to dismiss that specific alert from your view.
+Each alert card has an **✕** button in the top-right: click it to dismiss that specific alert from your view.
 
 ---
 
@@ -136,10 +136,10 @@ Each alert card has an **✕** button in the top-right — click it to dismiss t
 
 Each county on the map has a **narrative panel** with 4 sections:
 
-1. **Why is malnutrition prevalent here?** — the social, economic, and environmental drivers
-2. **A Family's Story** — a representative composite testimony (not a real individual — used to make the data relatable)
-3. **Local Initiatives & Programs** — real NGOs and government programs operating in that county
-4. **Progress & Success** — a documented success milestone
+1. **Why is malnutrition prevalent here?**: the social, economic, and environmental drivers
+2. **A Family's Story**, a representative composite testimony (not a real individual: used to make the data relatable)
+3. **Local Initiatives & Programs**: real NGOs and government programs operating in that county
+4. **Progress & Success**: a documented success milestone
 
 To read a county's story: click the county on the map, then scroll down to the narrative panel.
 
@@ -151,7 +151,7 @@ The **Q&A** page (`/qa`) has 10 frequently-asked questions about childhood malnu
 
 - **Search**: type a keyword in the search box to filter questions
 - **Expand**: click any question to expand its answer
-- **Ask your own**: scroll to the bottom and submit a question — our team responds within 3 working days
+- **Ask your own**: scroll to the bottom and submit a question: our team responds within 3 working days
 
 ---
 
@@ -162,7 +162,7 @@ The **Share a Story** page (`/stories`) lets you share your experience with chil
 ### How to submit
 1. Go to **Stories** in the navigation
 2. Fill in the form:
-   - **Your name (or pseudonym)**: use a first name or pseudonym — not your real full name
+   - **Your name (or pseudonym)**: use a first name or pseudonym, not your real full name
    - **County**: select your county
    - **Your role**: e.g., mother, community health volunteer, health officer
    - **Story title**: a short headline
@@ -183,7 +183,7 @@ The **Share a Story** page (`/stories`) lets you share your experience with chil
 ### The map doesn't load
 - Check your internet connection
 - Try refreshing the page
-- The map tiles load from OpenStreetMap — if it's slow, wait a few seconds
+- The map tiles load from OpenStreetMap: if it's slow, wait a few seconds
 
 ### The assessment form doesn't show a result
 - Make sure all required fields (marked with *) are filled
@@ -193,12 +193,12 @@ The **Share a Story** page (`/stories`) lets you share your experience with chil
 ### Push notifications don't work
 - Check that your browser supports notifications (Chrome, Firefox, Safari, Edge)
 - If you previously blocked notifications, go to your browser's site settings and re-allow them
-- Some browsers require HTTPS — our site is always HTTPS
+- Some browsers require HTTPS: our site is always HTTPS
 
 ### The site is slow on mobile
 - Try switching to a WiFi connection
 - Close other browser tabs
-- The map is the heaviest feature — other pages load faster
+- The map is the heaviest feature: other pages load faster
 
 ### Need more help?
 Email: **team@malnutrition-project.org**
